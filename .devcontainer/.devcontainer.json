@@ -1,0 +1,22 @@
+{
+    "name": "stylegan",
+    //docker-compose.ymlのパス
+    "dockerComposeFile": [
+        "../docker/docker-compose.yml"
+    ],
+    //docker-compose.ymlのservice名
+    "service": "dev",
+    //起動時のディレクトリ
+    "workspaceFolder": "/work/",
+    //デフォルトのsettings.json
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    //リモートコンテナのvscodeで使用するextension
+    "extensions": [
+        "ms-python.python",
+        "ionutvmi.path-autocomplete"
+    ],
+    //コンテナ作成後に実行するコマンド
+    "postCreateCommand": "apt-get update && apt-get install -y git"
+}

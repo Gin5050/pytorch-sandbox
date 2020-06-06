@@ -1,0 +1,40 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/dataset/**/*.{png,zip,jpg,npz}": true
+    },
+    "remote.containers.defaultExtensions": [
+        "christian-kohler.path-intellisense",
+        "davidhouchin.whitespace-plus",
+        "JoeBerria.statusbarerror",
+        "ms-python.python",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.jediEnabled": false,
+    "python.linting.flake8Args": [
+        "--ignore=E501,W503"
+    ],
+    "python.sortImports.args": [
+        "-m 3"
+    ],
+    "statusbarerror.wholeLine.show": true,
+    "window.zoomLevel": 0,
+    "window.title": "${folderPath}${separator}${activeEditorShort}${separator}${rootName}",
+    "workbench.colorTheme": "Solarized Dark+",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#FFFF00"
+    }
+}
